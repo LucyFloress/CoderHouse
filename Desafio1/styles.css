@@ -1,0 +1,102 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+
+.flex-headerr{
+    border: 2px solid rgb(143, 220, 246);
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    background:lightblue;
+    height: 100px;
+    width:100%;
+    margin: 0px;
+    line-height: 100px;
+    
+}
+
+.logo{
+    width: 8%;
+    height: 100px;
+    float: left;
+}
+
+.banner{
+    width: 92%; 
+    height: 100px;
+    float: right;
+}
+
+body{
+    background:lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    #container{
+    /*width: 70%;*/
+    width: 500px;
+    margin: 0px auto;
+    }
+    nav{
+        background-color: rgb(101, 209, 245);
+        height: 40px;
+        width: auto;
+        line-height: 40px;
+    }
+   
+    nav ul li{
+        float: right;
+        list-style: none;
+        margin: 10px;
+
+    }
+
+    .clearfix {
+        clear: both;
+    }
+
+    .content{
+        float: right;
+        width: 80%;
+        min-height: 500px;
+        
+    }
+
+    .article{
+     color: rgb(2, 2, 107);
+     margin-left: 10px;
+    }
+
+    aside{
+        float: left;
+        width: 20%;
+        min-height: 500px;
+        background-color: rgb(181, 176, 176);
+        
+
+    }
+
+    footer{
+        background-color: rgb(101, 209, 245);
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    .grid-layout{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 90%;
+        margin: 0 auto ;
+        justify-content: center;
+
+
+    }
+
+    .image {
+        width: 300px;
+        height: 200px;
+        border: 2px solid rgb(101, 209, 245);
+        margin: 5px;
+        float: left;
+    }
