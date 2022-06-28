@@ -1,0 +1,76 @@
+.container-fluid{
+  font-family: monospace;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+h1{
+  text-align: center;
+}
+
+h3{
+  color: rgb(88, 87, 87);
+  text-align: left;
+}
+
+article{
+  text-align: justify;
+}
+
+.navbar{
+  color: black;
+  background-color: rgb(101, 209, 245);
+}
+
+nav ul li{
+  float: right;
+  list-style: none;
+}
+
+ul {
+  display: flex;
+}
+
+.articulo {
+  background-color: lightgrey;
+}
+
+.sidebar {
+  background-color: rgb(181, 176, 176);
+}
+
+.footer{
+  text-align: center;
+  background-color: rgb(101, 209, 245);
+  
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 90%;
+  margin: 0 auto ;
+  justify-content: center;
+}
+
+.image {
+  width: 300px;
+  height: 200px;
+  margin: 5px;
+  float: left;
+}
+
+.links 
+{
+  text-align: center;
+}
+
+@media all and (max-width: 700px){
+  .image {
+      grid-column: 1 / span 3;
+
+  }
+}
