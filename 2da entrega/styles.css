@@ -1,0 +1,38 @@
+.columna {
+  border: 02px solid;
+  background-color: azure;
+}
+
+.columnaDos {
+  border: 02px solid;
+  background-color: rgb(96, 178, 140);
+}
+
+.header {
+  border-bottom: 01px solid #cccccc;
+}
+
+.navbar {
+  color: white;
+  background-color: rgb(101, 209, 245);
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin: 05px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.articulo {
+  background-color: bisque;
+}
+
+.sidebar {
+  background-color: rgb(181, 176, 176);
+}
