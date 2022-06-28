@@ -1,38 +1,49 @@
-.columna {
-  border: 02px solid;
-  background-color: azure;
+.container-fluid{
+  font-family: monospace;
 }
 
-.columnaDos {
-  border: 02px solid;
-  background-color: rgb(96, 178, 140);
+a{
+  color: black;
+  text-decoration: none;
 }
 
-.header {
-  border-bottom: 01px solid #cccccc;
+h1{
+  text-align: center;
 }
 
-.navbar {
-  color: white;
+h3{
+  color: rgb(88, 87, 87);
+  text-align: left;
+}
+
+article{
+  text-align: justify;
+}
+
+.navbar{
+  color: black;
   background-color: rgb(101, 209, 245);
+}
+
+nav ul li{
+  float: right;
+  list-style: none;
 }
 
 ul {
   display: flex;
 }
 
-li {
-  margin: 05px;
-}
-
-ul, li {
-  list-style: none;
-}
-
 .articulo {
-  background-color: bisque;
+  background-color: lightgrey;
 }
 
 .sidebar {
   background-color: rgb(181, 176, 176);
+}
+
+.footer{
+  text-align: center;
+  background-color: rgb(101, 209, 245);
+  
 }
