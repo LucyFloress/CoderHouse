@@ -1,0 +1,85 @@
+.cajita {
+    background-color: #d86084;
+    width: $a500;
+    height: $a500;
+    -webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
+    animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+@for $var from 1 through 4 {
+    .cajita:nth-child(#{$var}) {
+        animation-delay: 0.2s * $var;
+    }
+}
+
+@each $tamano in $tamanos {
+    .cajita#{$tamano} {
+        width: $tamano;
+        height: $tamano;
+    }
+}
+
+@each $red, $color in $redes {
+    .cajita#{$red} {
+        background-color: $color;
+    }
+}
+
+.cajitafacebook {
+    background-color: map-get($facebook, background-color);
+    color: map-get($facebook, color);
+    border-radius: map-get($facebook, border-radius);
+    border: map-get($facebook, border);
+}
+
+ @-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+
+
+%circulito {
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+ .circulito1, .circulito2, .circulito3 {
+    @extend %circulito;
+    @include anchos(100px, 100px);
+ }
+
+@mixin theme-colors($light: true) {
+    @if $light {
+        color: green;
+    } @else {
+        color: red;
+    }
+}
+
+h2 {
+    @include theme-colors($light: true);
+}
+
+
+.informacion {
+    background-color: red;
+    padding: 50px;
+    width: 500px;
+
+    @include celus {
+        background-color: green;
+    }
+
+    &__texto {
+        color: white;
+
+        @include celus {
+            color: black;
+        }
+    }
+
+    &__boton {
+        background-color: blue;
+    }
+}

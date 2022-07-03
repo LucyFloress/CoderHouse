@@ -1,0 +1,22 @@
+$a500: 100px;
+
+$tamanos: 50px, 100px, 150px, 200px;
+
+$redes: (
+    twitter: #429de7,
+    facebook: #0c416d,
+    instagram: #d425c6,
+    whatsapp: #23e754
+);
+
+$facebook: (
+    background-color: #0c416d,
+    color: #23e754,
+    border-radius: 10px,
+    border: 2px solid black
+);
+
+@mixin anchos($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
